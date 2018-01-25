@@ -12,7 +12,7 @@ import Foundation
 struct Concentration{
     
     //load an array of cards
-    private(set) var cards = [Card]()
+    private(set) var cards = [CardForConcentration]()
     
     var flipCount = 0
     var scoreCount = 0
@@ -67,11 +67,11 @@ struct Concentration{
     
    
     lazy var emojiChoiceForTheme = [String]() 
-    public var emojis = [Card:String]()
+    public var emojis = [CardForConcentration:String]()
     
     
     //Choose emojis
-    public mutating func emoji(for card: Card) -> String {
+    public mutating func emoji(for card: CardForConcentration) -> String {
         if emojis[card] == nil, emojiChoiceForTheme.count > 0 {
             emojis[card] = emojiChoiceForTheme.remove(at:emojiChoiceForTheme.count.arc4random)
         }
@@ -82,7 +82,7 @@ struct Concentration{
     
     init(numberOfPairsOfCards: Int) {
         for _ in 1...numberOfPairsOfCards {
-            let card = Card()
+            let card = CardForConcentration()
             cards += [card,card]
             
         }
@@ -92,7 +92,7 @@ struct Concentration{
     
     //shuffle the cards
     mutating private func shuffleCards() {
-        var cardsShuffled = [Card]()
+        var cardsShuffled = [CardForConcentration]()
         for _ in cards {
             let randomNum = Int(arc4random_uniform(UInt32(cards.count)))
             

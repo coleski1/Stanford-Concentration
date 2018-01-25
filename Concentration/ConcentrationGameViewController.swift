@@ -17,7 +17,7 @@ class ConcentrationGameViewController: UIViewController {
         return (cardButtons.count + 1)/2
     }
     
-    var theme:[String] = []// {
+    var theme:[String] = ["🏀","⚽️","🏈","⚾️","🎾","🏐","🏉","🎱","🏓","⛸","⛷","🏹"]// {
 //        didSet {
 //            game.cards.forEach(){
 //                $0.isFaceUp = false

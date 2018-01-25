@@ -13,8 +13,14 @@
 		FE81DB20200521BC00547322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE81DB1F200521BC00547322 /* Assets.xcassets */; };
 		FE81DB23200521BC00547322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE81DB21200521BC00547322 /* LaunchScreen.storyboard */; };
 		FE81DB2D20054E2A00547322 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81DB2C20054E2A00547322 /* Concentration.swift */; };
-		FE81DB2F20054ED900547322 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81DB2E20054ED900547322 /* Card.swift */; };
+		FE81DB2F20054ED900547322 /* CardForConcentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE81DB2E20054ED900547322 /* CardForConcentration.swift */; };
 		FEBBD702201913AE007FFADC /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBBD701201913AE007FFADC /* ConcentrationThemeChooserViewController.swift */; };
+		FEBE0533201995DC00F79287 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE0532201995DC00F79287 /* SetViewController.swift */; };
+		FEBE0535201995E500F79287 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE0534201995E400F79287 /* CardView.swift */; };
+		FEBE0537201995EB00F79287 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE0536201995EB00F79287 /* MainView.swift */; };
+		FEBE0539201995F200F79287 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE0538201995F200F79287 /* Card.swift */; };
+		FEBE053B201995F800F79287 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE053A201995F800F79287 /* Set.swift */; };
+		FEBE053D201995FD00F79287 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE053C201995FD00F79287 /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +32,14 @@
 		FE81DB22200521BC00547322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE81DB24200521BC00547322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE81DB2C20054E2A00547322 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
-		FE81DB2E20054ED900547322 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FE81DB2E20054ED900547322 /* CardForConcentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardForConcentration.swift; sourceTree = "<group>"; };
 		FEBBD701201913AE007FFADC /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
+		FEBE0532201995DC00F79287 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		FEBE0534201995E400F79287 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FEBE0536201995EB00F79287 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FEBE0538201995F200F79287 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FEBE053A201995F800F79287 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		FEBE053C201995FD00F79287 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +75,16 @@
 				FEBBD701201913AE007FFADC /* ConcentrationThemeChooserViewController.swift */,
 				FE81DB1A200521BC00547322 /* ConcentrationGameViewController.swift */,
 				FE81DB1C200521BC00547322 /* Main.storyboard */,
+				FEBE0538201995F200F79287 /* Card.swift */,
+				FEBE053C201995FD00F79287 /* Grid.swift */,
+				FEBE053A201995F800F79287 /* Set.swift */,
 				FE81DB2B2005227400547322 /* Supporting Files */,
 				FE81DB24200521BC00547322 /* Info.plist */,
 				FE81DB2C20054E2A00547322 /* Concentration.swift */,
-				FE81DB2E20054ED900547322 /* Card.swift */,
+				FE81DB2E20054ED900547322 /* CardForConcentration.swift */,
+				FEBE0532201995DC00F79287 /* SetViewController.swift */,
+				FEBE0534201995E400F79287 /* CardView.swift */,
+				FEBE0536201995EB00F79287 /* MainView.swift */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -153,11 +171,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBE053B201995F800F79287 /* Set.swift in Sources */,
+				FEBE0535201995E500F79287 /* CardView.swift in Sources */,
+				FEBE0539201995F200F79287 /* Card.swift in Sources */,
+				FEBE0537201995EB00F79287 /* MainView.swift in Sources */,
+				FEBE053D201995FD00F79287 /* Grid.swift in Sources */,
 				FEBBD702201913AE007FFADC /* ConcentrationThemeChooserViewController.swift in Sources */,
+				FEBE0533201995DC00F79287 /* SetViewController.swift in Sources */,
 				FE81DB1B200521BC00547322 /* ConcentrationGameViewController.swift in Sources */,
 				FE81DB19200521BC00547322 /* AppDelegate.swift in Sources */,
 				FE81DB2D20054E2A00547322 /* Concentration.swift in Sources */,
-				FE81DB2F20054ED900547322 /* Card.swift in Sources */,
+				FE81DB2F20054ED900547322 /* CardForConcentration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
