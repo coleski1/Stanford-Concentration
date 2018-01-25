@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationGameViewController: UIViewController {
     
     //load in a new game
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
@@ -16,6 +16,15 @@ class ViewController: UIViewController {
      var numberOfPairsOfCards: Int {
         return (cardButtons.count + 1)/2
     }
+    
+    var theme:[String] = []// {
+//        didSet {
+//            game.cards.forEach(){
+//                $0.isFaceUp = false
+//
+//            }
+//        }
+//    }
 
     @IBOutlet weak var flipCountLabel: UILabel!
     
@@ -26,7 +35,6 @@ class ViewController: UIViewController {
     //runs the new game code
     @IBAction func newGame(_ sender: Any) {
         let newFunGame = Concentration(numberOfPairsOfCards:(cardButtons.count+1)/2)
-        
         for index in cardButtons.indices {
             var card = game.cards[index]
             card.isFaceUp = false
@@ -36,6 +44,9 @@ class ViewController: UIViewController {
         game.flipCount = 0
         loadView()
     }
+    
+    
+    
     
     //what happens when you touch a card
     @IBAction func touchCard(_ sender: UIButton) {
@@ -50,6 +61,7 @@ class ViewController: UIViewController {
     
     //update the view
     func updateViewFromModel() {
+        game.emojiChoiceForTheme = theme
         for index in cardButtons.indices {
             let button = cardButtons[index]
             let cardOfChoice = game.cards[index]
